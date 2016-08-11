@@ -1,5 +1,7 @@
 #!/bin/bash
 
+# ZARA Invoice Processor / ENGLISH INVOICES 
+
 rm ~/Desktop/THN.txt
 grep -m 1 'VAT NUMBER' ~/Desktop/hh.rtf | sed 's/VAT NUMBER: //g' | sed 's/\\//' >> ~/Desktop/THN.txt
 grep -m 1 'ORDER NUMBER' ~/Desktop/hh.rtf | sed 's/\\cf[0-9] ORDER NUMBER: //g' | sed 's/\\//' >> ~/Desktop/THN.txt
